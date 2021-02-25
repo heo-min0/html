@@ -23,9 +23,10 @@ String age = request.getParameter("age");
 
 System.out.println("wname : " + wname);
 System.out.println("yes : " + yes);
+if(lan != null) {
 for(int i=0; i<lan.length; i++){
 	System.out.println("lan : " + lan[i]);
-}
+} }
 System.out.println("con : " + con);
 System.out.println("age : " + age);
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+<title>Insert title here</title>
+<style type="text/css">
+.container{
+	margin: 20px auto;
+}
+.card-header{
+	padding-bottom: 0;
+	position: relative;
+	background-color: #b3e6ff;
+}
+.text01{
+	color: #3366ff;
+}
+.text02{
+	color: #3366ff;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 5px;
+	bottom: 0;
+}
+.card-body{
+	border: 1px solid;
+	height: 25rem;
+}
+.input{
+	border: 1px solid lightgray;
+	border-right: none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: lightgray;
+}
+
+.icon{
+	width: 25px;
+	height: auto;
+	padding: 3px 0 0 1px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="card mb-5" style="max-width: 50rem; margin: 50px auto;">
+		<div class="card-header">
+			<div class="text01"><h4>Sign in</h4></div>
+			<div class="text02">forgot password?</div>
+		</div>
+		
+		<div class="card-body">
+			<h4 class="card-title">카드의 헤드라인</h4>
+			
+			<div class="input-group">
+				<span class="input" id="basic-addon1">
+					<img class="icon" alt="" src="./icon.png">
+				</span>
+  				<input type="text" class="form-control" aria-describedby="basic-addon1">
+			</div>
+			
+			<p class="card-text">카드의 내용</p>
+			<hr>
+			<p class="card-text">카드의 내용</p>
+		</div>
+		
+		<!-- <div class="card-footer">바닥글</div> -->
+
+	</div>
+</div>
+
+
+</body>
+</html>

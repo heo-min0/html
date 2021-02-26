@@ -8,36 +8,36 @@
 .full{
 	width: 600px;
 	height: 600px;
-	background-color: gray;
+	margin: 0 auto;
 }
-.a01{ width: 200px;	height: 600px; float: left;}
-.b02{ width: 200px;	height: 600px; float: left;}
-.c03{ width: 200px;	height: 600px; float: left;}
+.a01{ width: 200px; float: left;}
+.b02{ width: 200px;	float: left;}
+.c03{ width: 200px;	float: left;}
 
 .a0101{	width: 200px; height: 500px; background-color: red;}
 .a0102{	width: 200px; height: 100px; background-color: yellow;}
 .b0201{	width: 200px; height: 200px; background-color: blue;}
 .b0202{	width: 200px; height: 400px; background-color: green;}
 .c0301{	width: 200px; height: 300px; background-color: black;}
-.c0302{	width: 200px; height: 300px; background-color: lightred;}
+.c0302{	width: 200px; height: 300px; background-color: pink;}
 
 
-.b03{
-	width: 400px;
-	height: 100px;
-	text-align: left;	
+header{
 	background-color: gold;
+	margin: 10px auto;
 	border-style: solid;
 	border-width: thin;
 	padding: 10px;
+	width: 400px;
+	height: 100px;	
 }
-.b04{
-	width: 300px;
-	height: 150px;
-	border-bottom: thin;
+main{
 	background-color: olive;
-	padding-top: 10px;
-	text-align: left;	
+	margin: 10px auto;
+	border-bottom: 1px solid black;
+	padding: 10px 0 10px 0;
+	width: 300px;
+	height: 200px;
 }
 .b0401{
 	width: 150px;
@@ -51,13 +51,13 @@
 	background-color: purple;
 	float: left;
 }
-.b05{
+footer{
+	background-color: aqua;
+	margin: 30px auto;
+	border-style: dotted;
+	padding: 10px;
 	width: 350px;
 	height: 80px;
-	border-style: dotted;
-	background-color: aqua;
-	padding: 10px;
-	text-align: left;
 }
 
 
@@ -74,22 +74,20 @@
 .c07{text-align: left;}
 
 
-.d01{
-	list-style-image: url("star.gif"); */
-}
-
+ul{list-style-image: url("star.gif");}
+li{margin-bottom: 1em;}
 
 .e01{
-	width: 80%;
-	height: 70px;
 	background-color: orange;
+	padding: 20px;
 	border: solid 1px black;
-	padding-left: 20px;
-	line-height: 70px;
+	width: 80%;
+	height: 30px;
+	line-height: 30px;
 }
+img{margin-right: 5px;}
 
-
-.f01{
+/* .f01{
 	width: 80%;
 	height: 70px;
 	padding-left: 20px;
@@ -99,14 +97,23 @@
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px 1px gray;
 	/* 수직 수평 흐림 크기 색깔 */
-	background: linear-gradient(rgb(218,235,251), rgb(174,190,223));
+	/* background: linear-gradient(rgb(218,235,251), rgb(174,190,223)); */ 
+.f01 {
+	background: white;
+	border: 1px solid #666666;
+	margin: 1em;
+	padding: 1em;
+	border-radius: 0.5em; 
+	background: linear-gradient(to bottom, #ddeeff, #aabbdd);
+	box-shadow: 3px 3px 6px 1px rgba(0,0,0,0.2);
+	font-style: italic;
 }
 
 </style>
 </head>
 <body>
 
-<div align="center"><div class="full">
+<div class="full">
 	<div class="a01">
 		<div class="a0101"></div>
 		<div class="a0102"></div>
@@ -119,60 +126,64 @@
 		<div class="c0301"></div>
 		<div class="c0302"></div>
 	</div>
-</div></div>
+</div>
 
 <br><br><br><br>
 
-<div align="center"><div class="full2">
-	<div class="b03">header 영역</div><br>
-	<div class="b04">main 영역
-		<div class="b041">
+<header>
+	<p>header 영역</p>
+</header>
+
+<main>
+	<p>main 영역</p>
+	<div class="b041">
 		<div class="b0401">box1</div>
 		<div class="b0402">box2</div>
-		</div>
-	</div><br><br>
-	<div class="b05">footer 영역</div>
-</div></div>
-
-<br><br><br><br>
-
-<div align="center"><div class="full3">
-	<div class="c04">
-		<div class="c05">
-			<h2>명언</h2></div>
-		<div class="c06">
-			징기스칸 어록<br>
-		</div>
-		<div class="c07">
-			집안이 나쁘다고 탓하지 말라.나는 아홉 살 때 아버지를 잃고 마을에서 쫓겨났다.
-			가난하다고 말하지 말라.나는 들쥐를 잡아먹으며 연명했고,목숨을 건 전쟁이 내 직업이고 내 일이었다.
-			작은 나라에서 태어났다고 말하지 말라.그림자 말고는 친구도 없고 병사로만 10만.백성은 어린애, 노인까지 합쳐 2백만도 되지 않았다.
-			배운게 없다고 힘이 없다고 탓하지 말라.	나는 내 이름도 쓸 줄 몰랐으나 남의 말에 귀 기울이면서 현명해지는 법을 배웠다.
-			너무 막막하다고, 그래서 포기해야겠다고 말하지 말라. 나는 목에 칼을 쓰고도 탈출했고, 뺨에 화살을 맞고 죽었다 살아나기도 했다.
-			적은 밖에 있는 것이 아니라 내 안에 있었다. 나는 내게 거추장스러운 것은 깡그리 쓸어버렸다.
-			나를 극복하는 그순간 나는 징기스칸이 되었다.<br>
-		</div>
 	</div>
-</div></div>
+</main>
+
+<footer>
+	<p>footer 영역</p>
+</footer>
+
+<br><br><br><br>
+
+<div class="full3">
+	<div class="c05">
+		<h1>명언</h1>
+	</div>
+	
+	<div class="c06">
+		<h2>징기스칸 어록</h2>
+	</div>
+	
+	<div class="c07">
+		집안이 나쁘다고 탓하지 말라.나는 아홉 살 때 아버지를 잃고 마을에서 쫓겨났다.
+		가난하다고 말하지 말라.나는 들쥐를 잡아먹으며 연명했고,목숨을 건 전쟁이 내 직업이고 내 일이었다.
+		작은 나라에서 태어났다고 말하지 말라.그림자 말고는 친구도 없고 병사로만 10만.백성은 어린애, 노인까지 합쳐 2백만도 되지 않았다.
+		배운게 없다고 힘이 없다고 탓하지 말라.	나는 내 이름도 쓸 줄 몰랐으나 남의 말에 귀 기울이면서 현명해지는 법을 배웠다.
+		너무 막막하다고, 그래서 포기해야겠다고 말하지 말라. 나는 목에 칼을 쓰고도 탈출했고, 뺨에 화살을 맞고 죽었다 살아나기도 했다.
+		적은 밖에 있는 것이 아니라 내 안에 있었다. 나는 내게 거추장스러운 것은 깡그리 쓸어버렸다.
+		나를 극복하는 그순간 나는 징기스칸이 되었다.
+	</div>
+</div>
 <br><br><br><br>
 
 
-<ul class="d01">
-	<li>목록 항목A<br>그 상세한 설명.<br><br></li>
-	<li>목록 항목B<br>그 상세한 설명.<br><br></li>
-	<li>목록 항목C<br>그 상세한 설명.<br><br></li>
+<ul>
+	<li>목록 항목A<br>그 상세한 설명.</li>
+	<li>목록 항목B<br>그 상세한 설명.</li>
+	<li>목록 항목C<br>그 상세한 설명.</li>
 </ul>
 <br><br><br><br>
 
 <div class="e01">
-<img alt="" src="exq.gif">
-참고 이 메시지에 주의 하세요!
+<img alt="" src="exq.gif"> 참고 이 메시지에 주의 하세요!
 </div>
 <br><br><br><br>
 
-<div class="f01"><i>
-CSS를 사용한 장식 테두리<br>
-좋아하는 메시지를 작성합니다.<br></i>
+<div class="f01">
+CSS를 사용한 장식 테두리<br>좋아하는 메시지를 작성합니다.
 </div>
 
 <br><br><br><br>

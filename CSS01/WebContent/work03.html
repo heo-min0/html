@@ -5,20 +5,28 @@
 <title>Insert title here</title>
 
 <style type="text/css">
-table, th, td{
-	border-collapse: collapse;
+table, th{
 	border: 1px solid;
+	border-collapse: collapse;
 }
 .text{
 	width: 450px;
 }
 
-a{
-	background-color: blue;
+a:link{
+	background-color: royalblue;
+	trasition: 1s;
 	color: white;
+}
+a:visited{
+	color: royalblue;
 }
 a:hover {
 	background-color: aqua;
+}
+a:active {
+	color: red;
+	background-color: #efa;
 }
 
 </style>
@@ -26,7 +34,7 @@ a:hover {
 </head>
 <body>
 
-<table>
+<table border="1">
 <tr>
 	<th>분류</th><th>제품</th><th class="text">설명</th>
 </tr>
@@ -39,7 +47,7 @@ a:hover {
 </table>
 <br><br><br><br>
 
-<a href="http//www.google.com">구글 홈페이지 Link</a>
+<a href="http//google.com/" target="_blank">구글 홈페이지 Link</a>
 
 
 <br><br><br><br>

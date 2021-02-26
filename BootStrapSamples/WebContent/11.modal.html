@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1 class="text-center mb-5">component:modal</h1>
+<h2 class="text-center mb-4">기본적인 사용 예</h2>
+
+<div class="container">
+	<button type="button" class="btn btn-secondary" data-toggle="modal"
+			data-target="#exampleModal">전환버튼</button>
+			
+	<div class="modal fade" id="exampleModal" tabindex="1"
+		role="dialig" aria-labelledby="exampleModallabel"
+		aria-hidden="true"> <!-- 테두리 -->
+		
+		<div class="modal-dialog" role="document">본체<!-- 본체 -->
+			<div class="modal-content">내용 <!-- 내용 -->
+				 <div class="modal-header">헤더
+				 		<h5 class="modal-title" id="exampleModallabel">모달제목</h5>
+				 		<!-- 닫기버튼 -->
+				 		<button type="button" class="close" data-dismiss="modal" aria-lable="close">
+				 			닫기<span aria-hidden="true">&times;</span>
+				 		</button>
+				 </div>
+				 	<!-- 본문 -->
+				 <div class="modal-body">
+				 	내용부분입니다.
+				 </div>
+				 
+				 <div class="modal-footer"><!-- 꼬리말 -->
+				 	<button type="button" class="btn btn-secondary" data-dismiss="modal">
+				 	닫기
+				 	</button>
+				 </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
